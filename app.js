@@ -1,6 +1,7 @@
 let resultDiv = document.querySelector('#result');
 let Boxes = document.querySelectorAll('.box');
 let messageBox = document.querySelector('#message');
+let playAgainBtn = document.getElementById("button");
 console.log(Boxes);
 let WinningOutComes = [
   [1, 2, 3],
@@ -71,3 +72,8 @@ function Result(PlayerPlaying, PlayersArray) {
     }
   }
 }
+
+
+playAgainBtn.addEventListener("click",function(){
+  window.location.reload();
+})
